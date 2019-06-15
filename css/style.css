@@ -1,0 +1,253 @@
+*{
+    padding: :0;
+    margin: :0;
+}
+h1,h2 h3,h4{
+    font-family: 'Bitter', serif;     
+}
+/*header*/
+.header_section{
+    background: gray;
+}
+.navbar-nav .nav-item .nav-link {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 19px 0px;
+    color:black;
+}
+
+.nav-link:hover {
+    text-decoration: none;
+    color: white !important;
+    background: #09ACF7;
+   
+    
+}
+.navbar-nav > .active > a{
+     color: white !important;
+    background: #09ACF7;
+}
+
+/*Banner*/
+
+.banner_section {
+    background: url('../img/banner.png');
+    background-attachment: :fixed;
+    background-size: cover;
+    width: 100%;
+    height: 675px;
+}
+
+.banner_text h1{
+    font-size: 100px;
+    color: white;
+    padding-top: 220px;
+}
+.banner_text p{
+   font-size: 19px;
+    color: #FFF;
+    font-weight: 600; 
+}
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -moz-user-select: none;
+    border: 1px solid #09ACF7;
+    padding: 8px 32px;
+    font-size: 18px;
+    line-height: 1.5;
+    color:white;
+    border-radius: 0.25rem;
+   
+}
+.btn-outline-info:hover {
+    color: #FFF;
+    background-color: #09ACF7;
+    border: 1px solid #09ACF7;
+}
+.border{
+   height: 5px;
+    background: #3E5F7B; 
+    border: 1px solid #3E5F7B !important;
+    max-width: 500px;
+    margin: 16px auto;
+}
+/*about_section*/
+
+.ptb-100{
+    padding: 100px 0;
+}
+.about_text h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+.about_text p{
+    font-size: 19px;
+    padding-bottom: 20px;
+}
+
+/*feature_section*/
+
+.fature_col i{
+     background:#09ACF7; 
+    padding: 20px 30px;
+    border-radius: 7px;
+    color:white;
+    margin-bottom: 35px;
+}
+.fature_col h3{
+    font-size: 22px;
+    font-weight: 700;
+}
+.fature_col p{
+    font-size: 15px;
+    color: #999;
+    max-width: 246px;
+    margin: 0 auto;
+}
+
+/*portfolio_section*/
+
+.portfolio_text h2{
+    font-size: 40px;
+    font-weight: 700;
+    color:#2C3B4F;
+    padding-top: 20px;
+}
+.portfolio_text p{
+   font-size: 19px;
+font-weight: 600;
+}
+.portfolio{
+    position: relative;
+	margin-bottom:30px;
+	overflow:hidden;
+}
+.portfolio img{
+    width:100%;
+}
+.img_overlay{
+	position:absolute;
+	height:100%;
+	background: rgba(44, 173, 248, 0.74);
+	width:100%;
+	transform:scale(0);
+	transition:1s;
+	top:0;
+	left:0;
+}
+.portfolio:hover .img_overlay{
+	transform:scale(1);
+}
+.portfolio:hover .service_icon{
+	bottom:40%;
+}
+
+.service_icon{
+	position:absolute;
+	bottom:-100%;
+	left:40%;
+	transition:.9s;
+}
+.service_icon i{
+	color: white;
+	border: 1px solid white;
+	padding: 6px;
+	border-radius: 5px;
+	font-size:12px;
+}
+
+/*COntact_section*/
+
+.contact_section{
+    background: url('../img/footer-top-bg.png');
+    height: 630px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.contact_text h2{
+    font-size: 43px;
+    color: white;
+    font-weight: 700;
+    padding-top: 120px;
+}
+.contact_text p{
+    color:white;
+    font-size: 13px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color:transparent;
+    background-clip: padding-box;
+    border: 1px solid white;
+    border-radius: 0.25rem;
+
+}
+textarea{
+    border: 1px solid white;
+    width: 428px;
+    height: 168px;
+    color: gray;
+    background: transparent;
+}
+.form-check {
+    position: relative;
+    display:inline-block;
+    padding-left: 1.25rem;
+    margin-right: 183px;
+    margin-top: 30px;
+    color: white;
+}
+
+/*footer*/
+.footer_section{
+    padding: 35px 0;
+    color: #999;
+}
+.social i {
+    background:#09ACF7; 
+    color: white;
+    height: 25px;
+    width: 27px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+/*Responsive*/
+@media screen and (max-width:980px){
+    .banner_text h1{
+        font-size: 75px;
+}
+    .about_text p {
+    font-size: 17px;
+} 
+    .fature_col h3 {
+    font-size: 18px;
+}
+    .fature_col p{
+        font-size: 13px;
+    }
+    .form-control{
+        width: 330px;
+    }
+    textarea{
+        width: 330px;
+    }
+    .form-check{
+        margin-right: 10px;
+    }
+    .btn{
+        padding: 8px;
+    }
